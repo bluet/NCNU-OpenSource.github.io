@@ -6,14 +6,17 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
+    "deploy": "docusaurus deploy",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.40",
     "@docusaurus/preset-classic": "^2.0.0-alpha.40",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "snyk": "^1.437.4"
   },
   "browserslist": {
     "production": [
@@ -26,5 +29,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "snyk": true
 }
